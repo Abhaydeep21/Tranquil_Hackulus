@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#333641">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/quizmain.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
+    <script src="https://raw.githubusercontent.com/emn178/Chart.PieceLabel.js/master/src/Chart.PieceLabel.js"></script>
+   
+    
+</head>
+<body>
+    <div class="quizArea">
+    <div class="multipleChoiceQues">
+    <h1 class="mc_quiz">
+      Quiz
+    </h1>
+      <div class="my-progress">
+          <progress class="my-progress-bar" min="0" max="100" value="0" step="9" aria-labelledby="my-progress-completion"></progress>    
+          <p id="my-progress-completion" class="js-my-progress-completion sr-only" aria-live="polite">0% complete</p>
+      </div>
+      <div class="quizBox">
+        <div class="question"> </div>
+        <div class="answerOptions"></div>
+        <div class="buttonArea">
+          <button id="next"  class="hidden">Next</button>
+          <button id="submit"  class="hidden">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="resultArea">  
+      <div class="resultPage1">
+        <div class="resultBox">
+          <h1>Result Summary</h1>
+          <h2>Don't forget that this is not a medical diagnosis. If in doubt it is always best to seek advice from a medical professional</h2>
+        </div>
+        
+        <div class="resultBtns">
+          <button class="viewanswer">View Report</button>
+          
+          <br>
+          <button><a href="Explore/explore.html" style="text-decoration: none; color: #fff;">Explore</a></button>
+        </div>
+      </div>
+  
+      <div class="resultPage2">
+        <h1>Your Result</h1>
+        
+        <div class="chartBox">
+          
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <button class="backBtn">Back</button>
+      </div>
+  
+      <div class="resultPage3">
+        <h1>Your Report</h1>
+        <h3>Acute stress disorder</h3>
+        <p>8 out of 10 people with these symptoms had this condition</p>
+        <h4 style="color: #dc3c4d;"> Seek medical advice</h4>
+        <h5 style="text-align: left;">Description</h5>
+          <p style="text-align: left;">Acute stress disorder, also known as "emotional shock", 
+            is a term to describe a person's first emotional response to having experienced 
+            or witnessed an extremely stressful situation. This might include an accident, 
+            death of a loved one, a sexual or physical assault, among others. Acute stress reactions 
+            are those experienced within 4 weeks of the traumatic event and may include initial 
+            emotional numbness, altered sense of oneself or surroundings, or impaired memories 
+            of the time around the event. These reactions may be followed by having mixed feelings 
+            about the event, upsetting thoughts or memories, and avoiding situations which may 
+            trigger distress. Normally, these symptoms get better within a few days. To support 
+            the normal healing process, affected people often benefit from contacting their loved
+             ones, talking about the incident, doing activities which reduce stress and, in severe cases,
+             taking medication.</p>
+            
+            <h5 style="text-align: left;">Common Symptoms</h5>
+            <p style="text-align: left;">
+              
+              Depressed mode, Suicidal tendencies, Loss of appetite, Avoidance behaviour, Anxiety, Frequent nightmares
+          </p>
+
+          <button class="backBtn">Back</button>
+      </div>
+  
+    </div>
+  </div>
+  <script src="js/quizmain.js"></script>
+  </body>
+  </html>
